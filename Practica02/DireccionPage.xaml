@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica02.DireccionPage"
+             Title="Dirección"
+             BackgroundColor="LightGray">
+
+    <VerticalStackLayout Padding="20"
+                         Spacing="15"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center">
+
+        <!-- Imagen decorativa para hacer la página más atractiva -->
+        <Image Source="direccion_icon.png"
+               HeightRequest="150"
+               WidthRequest="150"
+               HorizontalOptions="Center" />
+
+        <!-- Etiqueta con un estilo mejorado -->
+        <Label Text="Introduzca su dirección de envío"
+               FontSize="Medium"
+               TextColor="Black"
+               HorizontalOptions="Center" />
+
+        <!-- Entrada de dirección con placeholder y un borde más amigable -->
+        <Entry Placeholder="Calle y número"
+               FontSize="Medium"
+               BackgroundColor="White"
+               TextColor="Black"
+               Margin="0,10"
+               HorizontalOptions="FillAndExpand"
+               HeightRequest="50"
+               Keyboard="Text" />
+
+        <!-- Entrada para la ciudad -->
+        <Entry Placeholder="Ciudad"
+               FontSize="Medium"
+               BackgroundColor="White"
+               TextColor="Black"
+               Margin="0,10"
+               HorizontalOptions="FillAndExpand"
+               HeightRequest="50"
+               Keyboard="Text" />
+
+        <!-- Entrada para el código postal -->
+        <Entry Placeholder="Código postal"
+               FontSize="Medium"
+               BackgroundColor="White"
+               TextColor="Black"
+               Margin="0,10"
+               HorizontalOptions="FillAndExpand"
+               HeightRequest="50"
+               Keyboard="Numeric" />
+
+        <!-- Botón de 'Anterior' con estilo personalizado -->
+        <Button Text="Anterior"
+                TextColor="White"
+                BackgroundColor="#007BFF"
+                CornerRadius="20"
+                HeightRequest="50"
+                WidthRequest="150"
+                Clicked="OnPreviousClicked"
+                HorizontalOptions="Center" />
+
+        <!-- Botón de 'Siguiente' con estilo personalizado -->
+        <Button Text="Siguiente"
+                TextColor="White"
+                BackgroundColor="#28A745"
+                CornerRadius="20"
+                HeightRequest="50"
+                WidthRequest="150"
+                Clicked="OnNextClicked"
+                HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+</ContentPage>

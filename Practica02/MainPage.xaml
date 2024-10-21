@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica02.MainPage"
+             Title="Bienvenido a la Tienda"
+             BackgroundColor="White">
+
+    <!-- Usamos un StackLayout con alineación al centro para hacer la página más estilizada -->
+    <VerticalStackLayout Padding="20"
+                         Spacing="25"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center">
+
+        <!-- Imagen de bienvenida decorativa -->
+        <Image Source="shopping_bag.png"
+               HeightRequest="200"
+               WidthRequest="200"
+               HorizontalOptions="Center"
+               Margin="0,20" />
+
+        <!-- Texto de bienvenida con estilo agradable -->
+        <Label Text="¡Bienvenido a nuestra tienda en línea!"
+               FontSize="Large"
+               TextColor="Black"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               Margin="0,10" />
+
+        <Label Text="Presiona el botón para comenzar tu compra."
+               FontSize="Medium"
+               TextColor="Gray"
+               HorizontalOptions="Center" />
+
+        <!-- Botón atractivo para comenzar el proceso de compra -->
+        <Button Text="Comienza a comprar"
+                TextColor="White"
+                BackgroundColor="#FF6347"
+                CornerRadius="25"
+                HeightRequest="60"
+                WidthRequest="260"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                Clicked="OnStartShoppingClicked"
+                HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>

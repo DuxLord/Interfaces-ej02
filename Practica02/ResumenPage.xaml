@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="Practica02.ResumenPage"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Resumen del Pedido"
+             BackgroundColor="White">
+
+    <VerticalStackLayout Padding="20"
+                         Spacing="25">
+
+        <!--  Título atractivo del resumen  -->
+        <Label FontAttributes="Bold"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               Text="Resumen del Pedido"
+               TextColor="Black" />
+
+        <!--  Sección de Resumen de Producto  -->
+        <Frame Padding="15"
+               BorderColor="#cccccc"
+               CornerRadius="20">
+            <VerticalStackLayout Spacing="15">
+                <!--  Imagen del producto seleccionado  -->
+                <Image HeightRequest="120"
+                       HorizontalOptions="Center"
+                       Source="sweater_rosa.png"
+                       WidthRequest="120" />
+
+                <!--  Detalles del producto  -->
+                <Label FontSize="Medium"
+                       Text="Producto: Suéter Rosa"
+                       TextColor="White" />
+                <Label FontSize="Medium"
+                       Text="Unidades: 1"
+                       TextColor="White" />
+                <Label FontSize="Medium"
+                       Text="Dirección de envío: C/ Joan, 12"
+                       TextColor="White" />
+            </VerticalStackLayout>
+        </Frame>
+
+        <!--  Botón para volver a la página anterior  -->
+        <Button BackgroundColor="#007BFF"
+                Clicked="OnPreviousClicked"
+                CornerRadius="20"
+                FontAttributes="Bold"
+                HeightRequest="50"
+                HorizontalOptions="Center"
+                Text="Anterior"
+                TextColor="White"
+                WidthRequest="150" />
+    </VerticalStackLayout>
+
+</ContentPage>

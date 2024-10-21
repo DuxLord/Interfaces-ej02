@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="Practica02.ProductoPage"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Producto"
+             BackgroundColor="White">
+
+    <VerticalStackLayout Padding="20"
+                         Spacing="25">
+
+        <!--  Título atractivo  -->
+        <Label FontAttributes="Bold"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               Text="Selecciona un producto"
+               TextColor="Black" />
+
+        <!--  Imagen y nombre de producto 1  -->
+        <Frame Padding="10"
+               BorderColor="#cccccc"
+               CornerRadius="20">
+            <HorizontalStackLayout>
+                <Image Margin="0,0,15,0"
+                       HeightRequest="100"
+                       Source="sweater_rosa.png"
+                       WidthRequest="100" />
+                <VerticalStackLayout>
+                    <Label FontAttributes="Bold"
+                           FontSize="Medium"
+                           Text="Suéter Rosa"
+                           TextColor="Black" />
+                    <Label FontSize="Small"
+                           Text="Un suéter suave y cómodo para el invierno."
+                           TextColor="Gray" />
+                    <Button BackgroundColor="#FF6347"
+                            CornerRadius="20"
+                            FontAttributes="Bold"
+                            HeightRequest="40"
+                            Text="Seleccionar"
+                            TextColor="White"
+                            WidthRequest="120"
+                            Margin="1,10,10,10" />
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <!--  Imagen y nombre de producto 2  -->
+        <Frame Padding="10"
+               BorderColor="#cccccc"
+               CornerRadius="20">
+            <HorizontalStackLayout>
+                <Image Margin="0,0,15,0"
+                       HeightRequest="100"
+                       Source="zapatos_negros.png"
+                       WidthRequest="100" />
+                <VerticalStackLayout>
+                    <Label FontAttributes="Bold"
+                           FontSize="Medium"
+                           Text="Zapatos Negros"
+                           TextColor="Black" />
+                    <Label FontSize="Small"
+                           Text="Zapatos elegantes para cualquier ocasión."
+                           TextColor="Gray" />
+                    <Button BackgroundColor="#FF6347"
+                            CornerRadius="20"
+                            FontAttributes="Bold"
+                            HeightRequest="40"
+                            Text="Seleccionar"
+                            TextColor="White"
+                            WidthRequest="120"
+                            Margin="13,10,10,10" />
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <!--  Botones de Navegación  -->
+        <HorizontalStackLayout HorizontalOptions="Center"
+                               Spacing="10">
+            <Button BackgroundColor="#007BFF"
+                    Clicked="OnPreviousClicked"
+                    CornerRadius="20"
+                    FontAttributes="Bold"
+                    HeightRequest="50"
+                    Text="Anterior"
+                    TextColor="White"
+                    WidthRequest="120" />
+
+            <Button BackgroundColor="#28A745"
+                    Clicked="OnNextClicked"
+                    CornerRadius="20"
+                    FontAttributes="Bold"
+                    HeightRequest="50"
+                    Text="Siguiente"
+                    TextColor="White"
+                    WidthRequest="120" />
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>
